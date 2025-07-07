@@ -22,7 +22,7 @@ public class Main {
     Формула поворота :
     [j][SIZE-1-i] нового массива = [i][j] старого массива.
      */
-    public static void rotate90Clockwise (int[][] base, int[][] rotated){
+    public static void rotate90Clockwise(int[][] base, int[][] rotated) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 rotated[j][SIZE - 1 - i] = base[i][j];
@@ -30,7 +30,7 @@ public class Main {
         }
     }
 
-    public static void initColors(int[][] matrix){
+    public static void initColors(int[][] matrix) {
         Random random = new Random();
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -39,7 +39,7 @@ public class Main {
         }
     }
 
-    public static  void printMatrix(int[][] matrix){
+    public static void printMatrix(int[][] matrix) {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 // %4d означает, что мы под каждый номер резервируем 4 знака
